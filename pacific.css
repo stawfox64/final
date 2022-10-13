@@ -117,14 +117,19 @@ footer {
 .active:after {
   content: "+"
 }
-figure{
+figure {
   border: 1px #0c0b0b solid;
-  box-shadow: 10px 10px 10px #777;
-  padding: 2px;
+  box-shadow: 15px 15px 15px #777;
+  padding: 10px;
   float: right;
   display: block;
   margin-right: right;
-  max-width: 50%;
+  max-width: 55%;
+}
+div {
+  overflow: hidden;
+  border: 1px;
+  width: auto;
 }
 figcaption {
   background-color: #a52a2a;
@@ -140,6 +145,12 @@ figcaption {
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
+.border{
+  background-color: lightcyan;
+  border: 2px;
+  border-style:solid;
+  border-color:#287EC7;
+ }
 #contact{font-size: 90%;
 }
   #homehero{
@@ -237,9 +248,15 @@ video{
       td.cost::before{
         content:"Cost:";
       }
-      td.package,td.description,td.nights,td.cost,.collapsible,.collapsible:after,.collapsible:hover,.active,.active:after{
+      td.package,td.description,td.nights,td.cost{
         padding-left: 35%;
         position: relative;
+        text-align: left;
+        font-size: 4vw;
+      }
+      .collapsible,.collapsible:after,.collapsible:hover,.active,.active:after{
+        padding-left: 10%;
+        position: left;
         text-align: left;
         font-size: 4vw;
       }
