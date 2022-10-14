@@ -145,15 +145,9 @@ figcaption {
   border-style:solid;
   border-color:#287EC7;
  }
- * {
-  box-sizing: border-box;
-}
-#contact{font-size: 90%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+
+#contact{
+  font-size: 90%;
 }
   #homehero{
       background-image: url(images/coast2.jpg);
