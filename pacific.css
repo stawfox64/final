@@ -119,17 +119,11 @@ footer {
 }
 figure {
   border: 1px #0c0b0b solid;
-  box-shadow: 15px 15px 15px #777;
+  box-shadow: 10px 10px 10px #777;
   padding: 10px;
   float: right;
   display: block;
-  margin-right: right;
   max-width: 55%;
-}
-div {
-  overflow: hidden;
-  border: 1px;
-  width: auto;
 }
 figcaption {
   background-color: #a52a2a;
@@ -151,7 +145,15 @@ figcaption {
   border-style:solid;
   border-color:#287EC7;
  }
+ * {
+  box-sizing: border-box;
+}
 #contact{font-size: 90%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
   #homehero{
       background-image: url(images/coast2.jpg);
@@ -223,6 +225,10 @@ video{
       header {
         background-image: none;
       }
+      .column {
+        width: 100%;
+      }
+    
       #homehero,#yurthero,#trailhero{
         background-size: auto;
       }
@@ -256,7 +262,7 @@ video{
       }
       .collapsible,.collapsible:after,.collapsible:hover,.active,.active:after{
         padding-left: 10%;
-        position: left;
+        position: relative;
         text-align: left;
         font-size: 4vw;
       }
